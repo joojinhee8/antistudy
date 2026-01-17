@@ -246,7 +246,7 @@ function GuideLanding() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/antistudy">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/guide/*" element={<GuidePage />} />
