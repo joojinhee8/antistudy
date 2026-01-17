@@ -1,0 +1,245 @@
+@use '../styles/variables' as *;
+
+// Export CSS custom properties for use in JS
+:root {
+    // Backgrounds - Base
+    --bg-base-default: #{$bg-base-default};
+    --bg-base-hover: #{$bg-base-hover};
+    --bg-base-secondary: #{$bg-base-secondary};
+    --bg-base-secondary-hover: #{$bg-base-secondary-hover};
+    --bg-base-tertiary: #{$bg-base-tertiary};
+    --bg-base-tertiary-hover: #{$bg-base-tertiary-hover};
+    --bg-disabled: #{$bg-disabled};
+
+    // Backgrounds - Brand
+    --bg-brand-default: #{$bg-brand-default};
+    --bg-brand-hover: #{$bg-brand-hover};
+    --bg-brand-secondary: #{$bg-brand-secondary};
+    --bg-brand-secondary-hover: #{$bg-brand-secondary-hover};
+    --bg-brand-tertiary: #{$bg-brand-tertiary};
+    --bg-brand-tertiary-hover: #{$bg-brand-tertiary-hover};
+
+    // Backgrounds - Neutral
+    --bg-neutral-default: #{$bg-neutral-default};
+    --bg-neutral-hover: #{$bg-neutral-hover};
+    --bg-neutral-secondary: #{$bg-neutral-secondary};
+    --bg-neutral-secondary-hover: #{$bg-neutral-secondary-hover};
+    --bg-neutral-tertiary: #{$bg-neutral-tertiary};
+    --bg-neutral-tertiary-hover: #{$bg-neutral-tertiary-hover};
+
+    // Backgrounds - Success
+    --bg-success-default: #{$bg-success-default};
+    --bg-success-hover: #{$bg-success-hover};
+    --bg-success-secondary: #{$bg-success-secondary};
+    --bg-success-secondary-hover: #{$bg-success-secondary-hover};
+    --bg-success-tertiary: #{$bg-success-tertiary};
+    --bg-success-tertiary-hover: #{$bg-success-tertiary-hover};
+
+    // Backgrounds - Warning
+    --bg-warning-default: #{$bg-warning-default};
+    --bg-warning-hover: #{$bg-warning-hover};
+    --bg-warning-secondary: #{$bg-warning-secondary};
+    --bg-warning-secondary-hover: #{$bg-warning-secondary-hover};
+    --bg-warning-tertiary: #{$bg-warning-tertiary};
+    --bg-warning-tertiary-hover: #{$bg-warning-tertiary-hover};
+
+    // Backgrounds - Danger
+    --bg-danger-default: #{$bg-danger-default};
+    --bg-danger-hover: #{$bg-danger-hover};
+    --bg-danger-secondary: #{$bg-danger-secondary};
+    --bg-danger-secondary-hover: #{$bg-danger-secondary-hover};
+    --bg-danger-tertiary: #{$bg-danger-tertiary};
+    --bg-danger-tertiary-hover: #{$bg-danger-tertiary-hover};
+
+    // Text - Base
+    --text-base-default: #{$text-base-default};
+    --text-base-secondary: #{$text-base-secondary};
+    --text-base-tertiary: #{$text-base-tertiary};
+    --text-disabled-default: #{$text-disabled-default};
+    --text-disabled-secondary: #{$text-disabled-secondary};
+
+    // Text - Brand
+    --text-brand-default: #{$text-brand-default};
+    --text-brand-secondary: #{$text-brand-secondary};
+    --text-brand-tertiary: #{$text-brand-tertiary};
+    --text-brand-on: #{$text-brand-on};
+    --text-brand-on-secondary: #{$text-brand-on-secondary};
+    --text-brand-on-tertiary: #{$text-brand-on-tertiary};
+
+    // Text - Neutral
+    --text-neutral-default: #{$text-neutral-default};
+    --text-neutral-secondary: #{$text-neutral-secondary};
+    --text-neutral-tertiary: #{$text-neutral-tertiary};
+    --text-neutral-on: #{$text-neutral-on};
+    --text-neutral-on-secondary: #{$text-neutral-on-secondary};
+    --text-neutral-on-tertiary: #{$text-neutral-on-tertiary};
+
+    // Text - Danger
+    --text-danger-default: #{$text-danger-default};
+    --text-danger-secondary: #{$text-danger-secondary};
+    --text-danger-tertiary: #{$text-danger-tertiary};
+    --text-danger-on: #{$text-danger-on};
+    --text-danger-on-secondary: #{$text-danger-on-secondary};
+    --text-danger-on-tertiary: #{$text-danger-on-tertiary};
+
+    // Text - Warning
+    --text-warning-default: #{$text-warning-default};
+    --text-warning-secondary: #{$text-warning-secondary};
+    --text-warning-tertiary: #{$text-warning-tertiary};
+    --text-warning-on: #{$text-warning-on};
+    --text-warning-on-secondary: #{$text-warning-on-secondary};
+    --text-warning-on-tertiary: #{$text-warning-on-tertiary};
+
+    // Text - Success
+    --text-success-default: #{$text-success-default};
+    --text-success-secondary: #{$text-success-secondary};
+    --text-success-tertiary: #{$text-success-tertiary};
+    --text-success-on: #{$text-success-on};
+    --text-success-on-secondary: #{$text-success-on-secondary};
+    --text-success-on-tertiary: #{$text-success-on-tertiary};
+
+    // Borders - Base
+    --border-base-default: #{$border-base-default};
+    --border-base-secondary: #{$border-base-secondary};
+    --border-base-tertiary: #{$border-base-tertiary};
+    --border-disabled: #{$border-disabled};
+
+    // Borders - Brand
+    --border-brand-default: #{$border-brand-default};
+    --border-brand-secondary: #{$border-brand-secondary};
+    --border-brand-tertiary: #{$border-brand-tertiary};
+
+    // Borders - Neutral
+    --border-neutral-default: #{$border-neutral-default};
+    --border-neutral-secondary: #{$border-neutral-secondary};
+    --border-neutral-tertiary: #{$border-neutral-tertiary};
+
+    // Borders - Success
+    --border-success-default: #{$border-success-default};
+    --border-success-secondary: #{$border-success-secondary};
+    --border-success-tertiary: #{$border-success-tertiary};
+
+    // Borders - Warning
+    --border-warning-default: #{$border-warning-default};
+    --border-warning-secondary: #{$border-warning-secondary};
+    --border-warning-tertiary: #{$border-warning-tertiary};
+
+    // Borders - Danger
+    --border-danger-default: #{$border-danger-default};
+    --border-danger-secondary: #{$border-danger-secondary};
+    --border-danger-tertiary: #{$border-danger-tertiary};
+
+    // Utilities
+    --utility-scrim: #{$utility-scrim};
+    --utility-blanket: #{$utility-blanket};
+    --utility-overlay: #{$utility-overlay};
+}
+
+// Color Showcase Styles
+.color-showcase {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+    }
+
+    &__header {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $border-base-default;
+
+        h2 {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.color-section {
+    margin-bottom: 2.5rem;
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        margin: 1.25rem 0 0.75rem;
+        color: $text-base-secondary;
+        font-size: 0.875rem;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.color-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.color-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    background: $bg-base-default;
+    border: 1px solid $border-base-default;
+    border-radius: 8px;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    &__swatch {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+
+        @media (max-width: 480px) {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+        overflow: hidden;
+        min-width: 0;
+    }
+
+    &__label {
+        font-size: 0.8125rem;
+        font-weight: 500;
+        color: $text-base-default;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__var {
+        font-size: 0.6875rem;
+        color: $text-base-tertiary;
+        font-family: 'Fira Code', monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

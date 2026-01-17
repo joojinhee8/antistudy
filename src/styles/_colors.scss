@@ -1,0 +1,221 @@
+// Premium Color Palette Primitives (Tailwind-inspired)
+$palette-white: #FFFFFF;
+$palette-black: #000000;
+
+// Neutrals (Slate)
+$palette-slate-50: #F8FAFC;
+$palette-slate-100: #F1F5F9;
+$palette-slate-200: #E2E8F0;
+$palette-slate-300: #CBD5E1;
+$palette-slate-400: #94A3B8;
+$palette-slate-500: #64748B;
+$palette-slate-600: #475569;
+$palette-slate-700: #334155;
+$palette-slate-800: #1E293B;
+$palette-slate-900: #0F172A;
+
+// Brand (Indigo)
+$palette-indigo-50: #EEF2FF;
+$palette-indigo-100: #E0E7FF;
+$palette-indigo-200: #C7D2FE;
+$palette-indigo-300: #A5B4FC;
+$palette-indigo-400: #818CF8;
+$palette-indigo-500: #6366F1;
+$palette-indigo-600: #4F46E5;
+$palette-indigo-700: #4338CA;
+$palette-indigo-800: #3730A3;
+$palette-indigo-900: #312E81;
+
+// Success (Emerald)
+$palette-emerald-50: #ECFDF5;
+$palette-emerald-100: #D1FAE5;
+$palette-emerald-200: #A7F3D0;
+$palette-emerald-300: #6EE7B7;
+$palette-emerald-400: #34D399;
+$palette-emerald-500: #10B981;
+$palette-emerald-600: #059669;
+$palette-emerald-700: #047857;
+$palette-emerald-800: #065F46;
+$palette-emerald-900: #064E3B;
+
+// Warning (Amber)
+$palette-amber-50: #FFFBEB;
+$palette-amber-100: #FEF3C7;
+$palette-amber-200: #FDE68A;
+$palette-amber-300: #FCD34D;
+$palette-amber-400: #FBBF24;
+$palette-amber-500: #F59E0B;
+$palette-amber-600: #D97706;
+$palette-amber-700: #B45309;
+$palette-amber-800: #92400E;
+$palette-amber-900: #78350F;
+
+// Danger (Rose)
+$palette-rose-50: #FFF1F2;
+$palette-rose-100: #FFE4E6;
+$palette-rose-200: #FECDD3;
+$palette-rose-300: #FDA4AF;
+$palette-rose-400: #FB7185;
+$palette-rose-500: #F43F5E;
+$palette-rose-600: #E11D48;
+$palette-rose-700: #BE123C;
+$palette-rose-800: #9F1239;
+$palette-rose-900: #881337;
+
+// Utilities
+$palette-overlay: rgba(0, 0, 0, 0.4);
+$palette-scrim: rgba(255, 255, 255, 0.8);
+
+// ============================================================================
+// SEMANTIC TOKENS
+// ============================================================================
+
+// ----------------------------------------------------------------------------
+// BACKGROUNDS
+// ----------------------------------------------------------------------------
+
+$bg-base-default: $palette-white;
+$bg-base-hover: $palette-slate-50;
+$bg-base-secondary: $palette-slate-50;
+$bg-base-secondary-hover: $palette-slate-100;
+$bg-base-tertiary: $palette-slate-100;
+$bg-base-tertiary-hover: $palette-slate-200;
+
+$bg-disabled: $palette-slate-200;
+
+// Brand
+$bg-brand-default: $palette-slate-900;
+$bg-brand-hover: $palette-slate-800;
+$bg-brand-secondary: $palette-slate-100;
+$bg-brand-secondary-hover: $palette-slate-200;
+$bg-brand-tertiary: $palette-slate-200;
+$bg-brand-tertiary-hover: $palette-slate-300;
+
+// Neutral
+$bg-neutral-default: $palette-slate-600;
+$bg-neutral-hover: $palette-slate-700;
+$bg-neutral-secondary: $palette-slate-200;
+$bg-neutral-secondary-hover: $palette-slate-300;
+$bg-neutral-tertiary: $palette-slate-100;
+$bg-neutral-tertiary-hover: $palette-slate-200;
+
+// Success
+$bg-success-default: $palette-emerald-600;
+$bg-success-hover: $palette-emerald-700;
+$bg-success-secondary: $palette-emerald-100;
+$bg-success-secondary-hover: $palette-emerald-200;
+$bg-success-tertiary: $palette-emerald-50;
+$bg-success-tertiary-hover: $palette-emerald-100;
+
+// Warning
+$bg-warning-default: $palette-amber-500;
+$bg-warning-hover: $palette-amber-600;
+$bg-warning-secondary: $palette-amber-100;
+$bg-warning-secondary-hover: $palette-amber-200;
+$bg-warning-tertiary: $palette-amber-50;
+$bg-warning-tertiary-hover: $palette-amber-100;
+
+// Danger
+$bg-danger-default: $palette-rose-600;
+$bg-danger-hover: $palette-rose-700;
+$bg-danger-secondary: $palette-rose-100;
+$bg-danger-secondary-hover: $palette-rose-200;
+$bg-danger-tertiary: $palette-rose-50;
+$bg-danger-tertiary-hover: $palette-rose-100;
+
+
+// ----------------------------------------------------------------------------
+// TEXT
+// ----------------------------------------------------------------------------
+
+$text-base-default: $palette-slate-900;
+$text-base-secondary: $palette-slate-600;
+$text-base-tertiary: $palette-slate-400;
+
+$text-disabled-default: $palette-slate-400;
+$text-disabled-secondary: $palette-slate-300;
+
+// Brand
+$text-brand-default: $palette-slate-900;
+$text-brand-secondary: $palette-slate-700;
+$text-brand-tertiary: $palette-slate-500;
+$text-brand-on: $palette-white;
+$text-brand-on-secondary: $palette-slate-900;
+$text-brand-on-tertiary: $palette-slate-900;
+
+// Neutral
+$text-neutral-default: $palette-slate-900;
+$text-neutral-secondary: $palette-slate-600;
+$text-neutral-tertiary: $palette-slate-500;
+$text-neutral-on: $palette-white;
+$text-neutral-on-secondary: $palette-slate-900;
+$text-neutral-on-tertiary: $palette-slate-900;
+
+// Danger
+$text-danger-default: $palette-rose-700;
+$text-danger-secondary: $palette-rose-600;
+$text-danger-tertiary: $palette-rose-500;
+$text-danger-on: $palette-white;
+$text-danger-on-secondary: $palette-rose-900;
+$text-danger-on-tertiary: $palette-rose-900;
+
+// Warning
+$text-warning-default: $palette-amber-700;
+$text-warning-secondary: $palette-amber-600;
+$text-warning-tertiary: $palette-amber-500;
+$text-warning-on: $palette-white;
+$text-warning-on-secondary: $palette-amber-900;
+$text-warning-on-tertiary: $palette-amber-900;
+
+// Success
+$text-success-default: $palette-emerald-700;
+$text-success-secondary: $palette-emerald-600;
+$text-success-tertiary: $palette-emerald-500;
+$text-success-on: $palette-white;
+$text-success-on-secondary: $palette-emerald-900;
+$text-success-on-tertiary: $palette-emerald-900;
+
+
+// ----------------------------------------------------------------------------
+// BORDERS
+// ----------------------------------------------------------------------------
+
+$border-base-default: $palette-slate-200;
+$border-base-secondary: $palette-slate-300;
+$border-base-tertiary: $palette-slate-800;
+
+$border-disabled: $palette-slate-300;
+
+// Brand
+$border-brand-default: $palette-slate-900;
+$border-brand-secondary: $palette-slate-700;
+$border-brand-tertiary: $palette-slate-500;
+
+// Neutral
+$border-neutral-default: $palette-slate-800;
+$border-neutral-secondary: $palette-slate-500;
+$border-neutral-tertiary: $palette-slate-300;
+
+// Success
+$border-success-default: $palette-emerald-800;
+$border-success-secondary: $palette-emerald-600;
+$border-success-tertiary: $palette-emerald-500;
+
+// Warning
+$border-warning-default: $palette-amber-800;
+$border-warning-secondary: $palette-amber-600;
+$border-warning-tertiary: $palette-amber-500;
+
+// Danger
+$border-danger-default: $palette-rose-800;
+$border-danger-secondary: $palette-rose-600;
+$border-danger-tertiary: $palette-rose-500;
+
+
+// ----------------------------------------------------------------------------
+// UTILITIES
+// ----------------------------------------------------------------------------
+
+$utility-scrim: $palette-scrim;
+$utility-blanket: rgba($palette-slate-900, 0.6);
+$utility-overlay: rgba($palette-slate-900, 0.4);

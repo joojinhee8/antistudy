@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+// Typography Mixin
+@mixin typography($size, $weight: $font-weight-regular, $line-height: $line-height-normal, $spacing: $letter-spacing-normal) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    letter-spacing: $spacing;
+}
+
+// Helper for Heading Styles
+@mixin heading($size, $weight: $font-weight-bold) {
+    @include typography($size, $weight, $line-height-tight, $letter-spacing-tight);
+    color: $color-text-primary;
+}
+
+// Helper for Body Styles
+@mixin body($size: $text-base) {
+    @include typography($size, $font-weight-regular, $line-height-relaxed, $letter-spacing-normal);
+    color: $color-text-secondary;
+}
+
+// Helper for Utility Generation
+@mixin generate-utility($prefix, $property, $map) {
+    @each $key, $value in $map {
+        .#{$prefix}-#{$key} {
+            #{$property}: $value;
+        }
+    }
+}

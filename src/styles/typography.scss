@@ -1,0 +1,83 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Import Google Fonts (Inter)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap'); // Example serif
+
+// Base Font Setting
+body {
+    font-family: $font-family-sans;
+    color: $color-text-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+.text-hero {
+    @include heading($text-7xl, $font-weight-bold);
+    letter-spacing: $letter-spacing-tighter;
+}
+
+.text-h1 {
+    @include heading($text-5xl, $font-weight-bold);
+}
+
+.text-h2 {
+    @include heading($text-4xl, $font-weight-semibold);
+}
+
+.text-h3 {
+    @include heading($text-3xl, $font-weight-medium);
+}
+
+.text-h4 {
+    @include heading($text-2xl, $font-weight-medium);
+}
+
+// Body Text
+.text-body-lg {
+    @include body($text-lg);
+}
+
+.text-body {
+    @include body($text-base);
+}
+
+.text-body-sm {
+    @include body($text-sm);
+}
+
+.text-body-xs {
+    @include body($text-xs);
+}
+
+// Weights
+.font-light {
+    font-weight: $font-weight-light;
+}
+
+.font-regular {
+    font-weight: $font-weight-regular;
+}
+
+.font-medium {
+    font-weight: $font-weight-medium;
+}
+
+.font-bold {
+    font-weight: $font-weight-bold;
+}
+
+// Colors (Utilities)
+.text-primary {
+    color: $color-text-primary;
+}
+
+.text-secondary {
+    color: $color-text-secondary;
+}
+
+.text-tertiary {
+    color: $color-text-tertiary;
+}

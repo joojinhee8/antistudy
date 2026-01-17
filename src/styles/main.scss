@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'mixins';
+@use 'typography';
+
+// Reset / Base
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    // Set default background for better contrast with text
+    background-color: $bg-base-secondary;
+}
+
+#root {
+    min-height: 100%;
+}
